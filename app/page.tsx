@@ -1,10 +1,10 @@
+import {memo} from "react";
 
-import styles from './page.module.scss'
-
-export default function Home() {
+const Home = () =>{
   return (
-    <main className={styles.main}>
-
-    </main>
+    <div>
+    hello im page
+    </div>
   )
 }
+export default  memo(Home)
