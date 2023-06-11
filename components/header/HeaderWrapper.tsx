@@ -10,7 +10,7 @@ const HeaderWrapper = () => {
     return (
         <SemanticWrapper Tag={'header'}>
             <div className={style.header}>
-                <h2>{t('title')}</h2>
+                <p>{t('title')}</p>
             </div>
         </SemanticWrapper>
 

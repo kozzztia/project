@@ -9,7 +9,7 @@ const NavigationWrapper = () => {
     return (
     <SemanticWrapper Tag={"nav"}>
         <div className={style.navigation}>
-            <h2>{t('title')}</h2>
+            <p>{t('title')}</p>
         </div>
     </SemanticWrapper>
     );
