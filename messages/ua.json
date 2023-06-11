@@ -1,0 +1,15 @@
+{
+  "Home": {
+    "title": "Hello world im ukrainian",
+    "description": "текст"
+  },
+  "Navigation" : {
+    "title": "Головна"
+  },
+  "Header" : {
+    "title" : "заголовок"
+  },
+  "Footer" : {
+    "footer" : "ебучий футер"
+  }
+}
