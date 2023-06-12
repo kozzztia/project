@@ -29,6 +29,7 @@ export default function RootLayout({children , params :{lang}}: RootLayoutInterf
       <main>
           {children}
       </main>
+
       <footer>
           footer
       </footer>
