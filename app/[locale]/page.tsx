@@ -14,7 +14,7 @@ function  Home() {
   return (
     <div>
         <button onClick={()=>pathName==="/"? router.push("en"):router.push("ua")}>
-            {pathName}
+            lang
         </button>
         <h1>{t('description')}</h1>
     </div>
