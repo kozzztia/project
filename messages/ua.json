@@ -1,0 +1,17 @@
+{
+  "server-component": {
+    "text" : "цей текст на сервері рендериться",
+    "welcome": "Welcome"
+  },
+  "counter" : {
+    "text" : "цей компонент рендериться на клієнті",
+    "increment": "збільшення",
+    "decrement": "зменшення"
+  },
+  "header": {
+    "title": "Украхнська"
+  },
+  "footer" : {
+    "title" : "футер"
+  }
+}

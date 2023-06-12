@@ -1,0 +1,17 @@
+{
+  "server-component": {
+    "text" : "This text is rendered on the server",
+    "welcome": "Welcome"
+  },
+  "counter" : {
+    "text" : "This compoment is rendered on client",
+    "increment": "increment",
+    "decrement": "decrement"
+  },
+  "header": {
+    "title": "English"
+  },
+  "footer" : {
+    "title" : "footer"
+  }
+}

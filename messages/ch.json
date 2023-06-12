@@ -1,0 +1,17 @@
+{
+  "server-component": {
+    "text" : "блеать server",
+    "welcome": "Welcome"
+  },
+  "counter" : {
+    "text" : "щось там на  on client",
+    "increment": "Přidat",
+    "decrement": "Ubrat"
+  },
+  "header": {
+    "title": "China"
+  },
+  "footer" : {
+    "title" : "big kokoko"
+  }
+}
