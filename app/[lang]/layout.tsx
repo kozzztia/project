@@ -1,6 +1,7 @@
 import '../../styles/globals.scss'
 import React from "react";
 import { i18n } from '@/i18n-config'
+import {getDictionary} from "@/get-message";
 
 
 export const metadata = {
@@ -18,12 +19,13 @@ interface RootLayoutInterface {
     params : {lang :string};
 }
 
-export default function RootLayout({children , params :{lang}}: RootLayoutInterface) {
+export default async function RootLayout({children , params :{lang}}: RootLayoutInterface) {
+    const dictionary = await getDictionary(lang)
   return (
     <html lang={lang}>
       <body>
       <header>
-          header
+          {dictionary['header'].title}
       </header>
 
       <main>
@@ -31,7 +33,7 @@ export default function RootLayout({children , params :{lang}}: RootLayoutInterf
       </main>
 
       <footer>
-          footer
+          {dictionary['footer'].title}
       </footer>
 
       </body>
