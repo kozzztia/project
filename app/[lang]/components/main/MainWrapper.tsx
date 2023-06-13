@@ -1,6 +1,6 @@
 import React from 'react';
-import SemanticWrapper from "@/components/semanticWrapper/SemanticWrapper";
-import style from "@/components/main/style.module.scss";
+import SemanticWrapper from "@/components/SemanticWrapper/SemanticWrapper";
+import style from "@/app/[lang]/components/main/style.module.scss";
 
 interface MainInterface {
     children : React.ReactNode;

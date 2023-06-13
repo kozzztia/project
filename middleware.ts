@@ -1,14 +1,33 @@
-import createMiddleware from 'next-intl/middleware';
+import { NextResponse } from 'next/server'
+import type { NextRequest } from 'next/server'
 
-export default createMiddleware({
-    // A list of all locales that are supported
-    locales: ['en', 'ua'],
+import { i18n } from './i18n-config'
 
-    // If this locale is matched, pathnames work without a prefix (e.g. `/about`)
-    defaultLocale: 'ua'
-});
+import { match as matchLocale } from '@formatjs/intl-localematcher'
+import Negotiator from 'negotiator'
+
+function getLocale(request: NextRequest): string | undefined {
+    const negotiatorHeaders: Record<string, string> = {}
+    request.headers.forEach((value, key) => (negotiatorHeaders[key] = value))
+    let languages = new Negotiator({ headers: negotiatorHeaders }).languages()
+    const locales: string[] = i18n.locales
+    return matchLocale(languages, locales, i18n.defaultLocale)
+}
+
+export function middleware(request: NextRequest) {
+    const pathname = request.nextUrl.pathname
+
+    const pathnameIsMissingLocale = i18n.locales.every(
+        (locale) => !pathname.startsWith(`/${locale}/`) && pathname !== `/${locale}`
+    )
+
+    if (pathnameIsMissingLocale) {
+        const locale = getLocale(request)
+
+        return NextResponse.redirect(new URL(`/${locale}/${pathname}`, request.url))
+    }
+}
 
 export const config = {
-    // Skip all paths that should not be internationalized
-    matcher: ['/((?!api|_next|.*\\..*).*)']
-};
+    matcher: ['/((?!api|_next/static|_next/image|favicon.ico).*)'],
+}

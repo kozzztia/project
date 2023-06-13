@@ -1,15 +1,15 @@
 'use client'
 import React from 'react';
-import SemanticWrapper from "@/components/semanticWrapper/SemanticWrapper";
+import SemanticWrapper from "@/components/SemanticWrapper/SemanticWrapper";
 import {useTranslations} from "next-intl";
-import style from "@/components/navigation/style.module.scss";
+import style from "@/app/[lang]/components/navigation/style.module.scss";
+import LanguageSwitcher from "@/app/[lang]/components/LanguageSwitcher/LanguageSwitcher";
 
 const NavigationWrapper = () => {
-    const t = useTranslations('Navigation');
     return (
     <SemanticWrapper Tag={"nav"}>
         <div className={style.navigation}>
-            <p>{t('title')}</p>
+            nav nav
         </div>
     </SemanticWrapper>
     );
