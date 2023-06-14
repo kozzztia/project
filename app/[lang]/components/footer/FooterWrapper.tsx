@@ -2,11 +2,10 @@
 import React, {memo} from 'react';
 import style from "./style.module.scss"
 import SemanticWrapper from "@/components/SemanticWrapper/SemanticWrapper";
-import {getMessage} from "@/getMessages";
+import {getDictionary} from "@/getDictionaries";
 
 const FooterWrapper = async ({lang})=>{
-    const {Footer} = await getMessage(lang)
-    console.log(lang)
+    const {Footer} = await getDictionary(lang)
     return (
 
         <SemanticWrapper Tag={"footer"} >
