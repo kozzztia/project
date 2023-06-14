@@ -1,0 +1,17 @@
+{
+  "Home": {
+    "title": "Hello world im english",
+    "description": "description"
+  },
+  "Navigation" :
+    {
+      "flag" : "English"
+    },
+  "Header" : {
+    "title" : "header"
+  },
+  "Footer" : {
+    "footer" : "Fucking footer"
+  }
+}
+
