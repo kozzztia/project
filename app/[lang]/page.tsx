@@ -1,7 +1,7 @@
 
 import {memo} from "react";
 import {Locale} from "@/i18n-config";
-import {getDictionary} from "@/dictionaries/getDictionaries";
+import {getDictionary} from "@/getDictionaries";
 
 
 async function  Home({params: { lang },}: { params: { lang: Locale } }) {

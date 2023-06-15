@@ -2,7 +2,7 @@
 import React, {memo} from 'react';
 import style from "./style.module.scss"
 import SemanticWrapper from "@/components/SemanticWrapper/SemanticWrapper";
-import {getDictionary} from "@/dictionaries/getDictionaries";
+import {getDictionary} from "@/getDictionaries";
 
 const FooterWrapper = async ({lang})=>{
     const {Footer} = await getDictionary(lang)

@@ -1,6 +1,6 @@
 import React, {memo} from 'react';
 import {i18n} from "@/i18n-config";
-import {getDictionary} from "@/dictionaries/getDictionaries";
+import {getDictionary} from "@/getDictionaries";
 
 export async function generateStaticParams() {
     return i18n.locales.map((locale) => ({lang: locale}))
