@@ -1,8 +1,8 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import style from "./style.module.scss";
 import SemanticWrapper from "@/components/SemanticWrapper/SemanticWrapper";
 import LanguageSwitcher from "@/app/[lang]/components/LanguageSwitcher/LanguageSwitcher";
-import {getDictionary} from "@/dictionaries/getDictionaries";
+import {getDictionary} from "@/getDictionaries";
 
 
 
