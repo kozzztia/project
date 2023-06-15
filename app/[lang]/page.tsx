@@ -1,15 +1,15 @@
 
 import {memo} from "react";
 import {Locale} from "@/i18n-config";
-import {getDictionary} from "@/getDictionaries";
+import {getDictionary} from "@/dictionaries/getDictionaries";
 
 
 async function  Home({params: { lang },}: { params: { lang: Locale } }) {
-    const {Home} = await getDictionary(lang)
+    const {Main} = await getDictionary(lang)
   return (
     <div>
-        <h1>{Home.title}</h1>
-        <p>{Home.description}</p>
+        <h1>{Main.title}</h1>
+        <p>{Main.description}</p>
     </div>
   )
 }

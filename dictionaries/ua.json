@@ -1,10 +1,33 @@
 {
-  "Home": {
+  "Main": {
     "title": "Hello world im ukrainian",
     "description": "текст"
   },
   "Navigation" : {
-    "flag": "Українська"
+    "home" : "Головна",
+    "about" : "Про нас",
+    "services": "Послуги",
+    "pages": "Наші роботи",
+    "news": "Новини",
+    "contacts": "контакти"
+  },
+  "About" : {
+    "title": "про нас"
+  },
+  "Home": {
+    "title": "Головна"
+  },
+  "Contacts": {
+    "title": "Контакти"
+  },
+  "News": {
+    "title": "Новини"
+  },
+  "Pages": {
+    "title": "Роботи"
+  },
+  "Services": {
+    "title": "Послуги"
   },
   "Header" : {
     "title" : "заголовок"

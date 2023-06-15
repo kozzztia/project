@@ -1,12 +1,37 @@
 {
-  "Home": {
+  "Main": {
     "title": "Hello world im english",
     "description": "description"
   },
   "Navigation" :
     {
-      "flag" : "English"
+      "home" : "Home",
+      "about" : "About",
+      "services": "Services",
+      "pages": "Pages",
+      "news": "News",
+      "contacts": "Contacts"
     },
+  "About" : {
+    "title": "about us"
+  },
+  "Home": {
+    "title": "Home"
+  },
+  "Contacts": {
+    "title": "Contacts"
+  },
+  "News": {
+    "title": "News"
+  },
+  "Pages": {
+    "title": "Pages"
+  },
+  "Services": {
+    "title": "Services"
+  },
+
+
   "Header" : {
     "title" : "header"
   },
