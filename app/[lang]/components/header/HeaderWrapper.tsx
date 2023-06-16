@@ -13,7 +13,7 @@ const HeaderWrapper = async ({lang}) => {
         <SemanticWrapper Tag={"header"} >
             <div className={style.header}>
                 <h2>{Header.title}</h2>
-                <LanguageSwitcher/>
+                <LanguageSwitcher className={style.header__switcher}/>
             </div>
         </SemanticWrapper>
     );

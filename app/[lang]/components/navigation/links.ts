@@ -1,7 +1,7 @@
 
 
 export const navigationLinks = [
-    {link : "home" , id : 1},
+    {link : "" , id : 1},
     {link : "about" ,id : 2},
     {link : "services",id : 3},
     {link : "pages",id : 4},

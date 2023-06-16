@@ -12,19 +12,20 @@ interface NavigationInterface {
 
 const NavigationWrapper = async ({lang}: NavigationInterface) => {
     const {Navigation} = await getDictionary(lang)
-
     const keyArray = Object.keys(Navigation)
     return (
         <SemanticWrapper Tag={"nav"}>
-            <div className={style.navigation}>
+            <ul className={style.navigation}>
                 {
                     navigationLinks.map((item, i) =>
-                        <CustomLink key={item.id}
-                                    children={Navigation[keyArray[i]]}
-                                    href={pathGenerator(lang, item.link)}
+                        <CustomLink
+                            className={style.navigation__item}
+                            key={item.id}
+                            children={Navigation[keyArray[i]]}
+                            href={`/${lang}/${item.link}`}
                         />)
                 }
-            </div>
+            </ul>
         </SemanticWrapper>
     );
 };

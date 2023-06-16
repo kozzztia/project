@@ -12,7 +12,7 @@ interface SemanticWrapperInterface {
 
 const SemanticWrapper = ({Tag , children , className , color = 'inherit'} : SemanticWrapperInterface) => {
     return (
-        <Tag style={{background: `${color}`}} className = {classNames(className as string)}>
+        <Tag className = {classNames(className as string)}>
             {children}
         </Tag>
     );
