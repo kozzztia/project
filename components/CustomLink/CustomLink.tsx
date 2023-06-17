@@ -10,17 +10,17 @@ import {classNames} from "@/helpers/classNames";
 interface CustomLinkInterface {
     children : React.ReactNode;
     className : string;
-    href : string;
+    link : string;
 }
 
 
-const CustomLink = ({children, className , href}: CustomLinkInterface  & LinkProps) => {
+const CustomLink = ({children, className , link}: CustomLinkInterface) => {
     const pathName = usePathname();
-    const isActive = pathName === href;
-    console.log(pathName , href)
+    const isActive = pathName === link;
+
     return (
         <Link
-            href={href}
+            href={link}
             className={classNames(className ,style.link ,isActive ? style.active : "")}>
             {children}
         </Link>

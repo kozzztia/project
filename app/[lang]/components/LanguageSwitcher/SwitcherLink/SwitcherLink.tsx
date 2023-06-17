@@ -8,16 +8,17 @@ import Link, {LinkProps} from "next/link";
 interface CustomLinkInterface {
     children : React.ReactNode;
     className : string;
+    link : string
 }
 
 
-const SwitcherLink = ({children, className , href}: CustomLinkInterface & LinkProps) => {
+const SwitcherLink = ({children, className , link}: CustomLinkInterface) => {
     const pathName = usePathname();
-    const isActive = pathName === href;
+    const isActive = pathName === link;
     return (
         <Link
             className={classNames(className ,style.link ,isActive ? style.active : "")}
-            href={href}
+            href={link}
         >
             {children}
         </Link>

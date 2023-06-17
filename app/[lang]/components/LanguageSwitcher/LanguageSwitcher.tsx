@@ -25,7 +25,7 @@ export default function LanguageSwitcher({className} : LanguageSwitcherInterface
                     <li key={locale}>
                         <SwitcherLink
                             className={classNames(style.switcher__item)}
-                            href={redirectedPathName(locale)}>
+                            link={redirectedPathName(locale)}>
                             {locale}
                         </SwitcherLink>
                     </li>
