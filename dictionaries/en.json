@@ -1,5 +1,5 @@
 {
-  "Main": {
+  "Home": {
     "title": "Hello world im english",
     "description": "description"
   },
@@ -14,9 +14,6 @@
     },
   "About" : {
     "title": "about us"
-  },
-  "Home": {
-    "title": "Home"
   },
   "Contacts": {
     "title": "Contacts"

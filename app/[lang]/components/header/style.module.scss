@@ -1,5 +1,10 @@
 @import "@/styles/mixins";
 
 .header{
-  @include layout
+  @include layout;
+  @include flex(row , space-between);
+  position: inherit;
+  &__switcher{
+    position: inherit;
+  }
 }

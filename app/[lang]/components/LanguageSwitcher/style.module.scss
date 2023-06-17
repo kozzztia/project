@@ -1,0 +1,10 @@
+@import "@/styles/mixins";
+
+
+.switcher{
+  @include flex(row);
+  position: relative;
+  &__item{
+    padding : 5px;
+  }
+}

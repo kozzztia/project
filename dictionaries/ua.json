@@ -1,5 +1,5 @@
 {
-  "Main": {
+  "Home": {
     "title": "Hello world im ukrainian",
     "description": "текст"
   },
@@ -13,9 +13,6 @@
   },
   "About" : {
     "title": "про нас"
-  },
-  "Home": {
-    "title": "Головна"
   },
   "Contacts": {
     "title": "Контакти"

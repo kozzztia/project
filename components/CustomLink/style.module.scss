@@ -4,13 +4,8 @@
   transition: .1s;
   min-height: 25px;
   border-bottom: solid 1px transparent;
-  &:hover{
-    border-bottom: solid 1px red;
-  };
-
 }
 
 .active{
   color: red ;
-  border-bottom: solid 1px red;
 }

@@ -1,8 +1,18 @@
-
-@mixin layout{
-  padding : 5px;
+@mixin layout {
+  padding: 5px;
   max-width: 1200px;
   height: auto;
   margin: 0 auto;
   border: 1px black solid;
+}
+
+@mixin flex(
+  $direction,
+  $content : center,
+  $item :center)
+{
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $content;
+  align-items: $item;
 }

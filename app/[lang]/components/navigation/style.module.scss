@@ -1,6 +1,10 @@
-@import "../../../../styles/mixins";
+@import "@/styles/mixins";
 
 .navigation{
   @include layout;
+  @include flex(row ,space-between);
   background: inherit;
+  &__item{
+    position: relative;
+  }
 }

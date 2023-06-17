@@ -5,11 +5,11 @@ import {getDictionary} from "@/getDictionaries";
 
 
 async function  Home({params: { lang },}: { params: { lang: Locale } }) {
-    const {Main} = await getDictionary(lang)
+    const {Home} = await getDictionary(lang)
   return (
     <div>
-        <h1>{Main.title}</h1>
-        <p>{Main.description}</p>
+        <h1>{Home.title}</h1>
+        <p>{Home.description}</p>
     </div>
   )
 }
